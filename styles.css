@@ -1,0 +1,159 @@
+body { background-color:#fff; margin:0; padding: 5px; }
+
+.gamepanel { width:310px; height:345px; padding:0px; margin:0px auto; border:0px; overflow:hidden; position:relative;  
+text-shadow: 0 1px 1px rgba(0,0,0,0.1); background-color:#070;
+-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none;  user-select: none;  }
+#result-dialog, #getmoney-dialog 
+{
+position:absolute;
+left:0px;
+top:60px;
+width:310px;
+height:285px;
+background:rgba(0,0,0, 0.75);
+color:#fff;
+
+z-index:-1;
+display:none;
+}
+
+#doubleup-dialog
+{
+position:absolute;
+left:0px;
+top:60px;
+width:310px;
+height:285px;
+background:#000; //rgba(0,0,0, 0.75);
+color:#fff;
+
+z-index:-1;
+display:none;
+}
+
+#result-div, #getmoney-div, #doubleup-div
+{
+margin:0px auto;
+margin-top:20px;
+width:90%;
+color:#fff;
+text-align:center;
+}
+
+#moneysource
+{
+margin-left:30px;
+margin-top:10px;
+}
+
+#result-ok, #getmoney-ok, #result-go-doubleup, #result-no-doubleup, #doubleup-hi, #doubleup-lo, #doubleup-ok
+{
+position:absolute;
+bottom:30px;
+background:rgba(0,0,0, 0.0);
+color:#fff;
+border:1px solid #fff;
+width:110px;
+height:20px;
+padding:5px;
+margin:0px auto;
+font-weight:bold;
+text-align:center;
+ -moz-border-radius:20px;  
+ -webkit-border-radius:20px;  
+ border-radius:20px;  
+
+cursor:pointer;
+}
+
+#result-ok, #getmoney-ok {right:100px;}
+#result-go-doubleup      {left:20px;  }
+#result-no-doubleup      {right:20px; }
+#doubleup-lo {width:70px; left:15px;}
+#doubleup-hi {width:70px; left:105px;}
+#doubleup-ok {width:80px; left:205px;}
+
+#result-go-doubleup:hover, #result-no-doubleup:hover, #result-ok:hover, #getmoney-ok:hover
+{
+background:rgba(255,255,255, 0.75);
+color:#000;
+}
+
+#assetlabel
+{
+position:absolute;
+left:160px;
+top:15px;
+color:#fff;
+text-shadow: 0 1px 1px #888; //rgba(0,0,0,0.75);
+text-align:center;
+width:100px
+}
+
+#myasset
+{
+position:absolute;
+left:160px;
+top:35px;
+color:#ff0;
+text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+text-align:center;
+font-weight:bold;
+width:100px
+}
+
+.card, .mcard
+{
+position:absolute;
+
+width:44px;
+height:32px;
+padding:6px 0px 6px 0px;
+background-color:#fff;
+color:#000;
+
+font-size:20px;
+font-weight:bold;
+text-align:center;
+line-height:80%;
+cursor:pointer;
+
+border:1px solid #000;
+
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+
+display: inline-block;
+
+margin:3px;
+}
+.card:hover
+{
+border:1px solid #fff;
+
+}
+
+#flyhingcard {left:10px; top:10px; z-index:-2; display:none;}
+
+#deck {left:10px; top:10px;}
+#card00 {left:10px; top:60px } #card10 {left:60px; top:60px } #card20 {left:110px; top:60px } #card30 {left:160px; top:60px } #card40 {left:210px; top:60px }
+#card01 {left:10px; top:110px} #card11 {left:60px; top:110px} #card21 {left:110px; top:110px} #card31 {left:160px; top:110px} #card41 {left:210px; top:110px}
+#card02 {left:10px; top:160px} #card12 {left:60px; top:160px} #card22 {left:110px; top:160px} #card32 {left:160px; top:160px} #card42 {left:210px; top:160px}
+#card03 {left:10px; top:210px} #card13 {left:60px; top:210px} #card23 {left:110px; top:210px} #card33 {left:160px; top:210px} #card43 {left:210px; top:210px}
+#card04 {left:10px; top:260px} #card14 {left:60px; top:260px} #card24 {left:110px; top:260px} #card34 {left:160px; top:260px} #card44 {left:210px; top:260px}
+
+.hand
+{
+position:absolute;
+font-size:12px;
+color:#ccc;
+
+text-align:center;
+width:50px;
+}
+
+#hand10 {left:260px; top:40px} 
+#hand0 {left:260px; top:80px} #hand1 {left:260px; top:130px} #hand2 {left:260px; top:180px} #hand3 {left:260px; top:230px} #hand4 {left:260px; top:280px} 
+#hand11 {left:260px; top:320px} 
+#hand5 {left:10px; top:320px} #hand6 {left:60px; top:320px} #hand7 {left:110px; top:320px} #hand8 {left:160px; top:320px} #hand9 {left:210px; top:320px}
